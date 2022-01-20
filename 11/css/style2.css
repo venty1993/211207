@@ -1,0 +1,36 @@
+header{
+    width: 1000px;
+    height: 100px;
+    border: 2px solid black;
+    margin: 0 auto;
+}
+
+h1{
+    width: 200px;
+    line-height: 100px;
+    float: left;
+    background-color: yellow;
+    text-align: center;
+}
+
+nav{
+    float: right;
+    background-color: antiquewhite;
+}
+
+nav ul li{
+    height: 30px;
+    width: 60px;
+    text-align: center;
+}
+
+nav ul:first-child li{
+    background-color: yellow ;
+    float: left;
+}
+
+nav ul:last-child li{
+    background-color: orange;
+    float: left;
+    margin-top: 40px;
+}

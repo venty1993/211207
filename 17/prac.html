@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            width: 500px;
+            height: 40px;
+            margin: 0 auto;
+        }
+        li {
+            list-style: none;
+            width: 100px;
+            height: 38px;
+            line-height: 40px;
+            text-align: center;
+            float: left;
+            transition: 1s;
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        li>div{
+            width: 0px;
+            height: 2px;
+            background-color: orange;
+            transition: 1s;
+        }
+
+        li:hover{
+            color: orange;
+        }
+
+        li:hover>div{
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            소개
+            <div></div>
+        </li>
+        <li>
+            공지사항
+            <div></div>
+        </li>
+        <li>
+            자세히
+            <div></div>
+        </li>
+        <li>
+            연혁
+            <div></div>
+        </li>
+        <li>
+            서비스
+            <div></div>
+        </li>
+    </ul>
+</body>
+</html>

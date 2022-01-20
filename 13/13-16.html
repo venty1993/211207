@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keat</title>
+    <style>
+        table {
+            border: black 2px solid;
+            border-collapse: collapse;
+            width: 300px;
+        }
+
+        td {
+            border: 2px solid black;
+            padding: 10px;
+            height: 100px;
+            text-align: center;
+            width: 200px;
+        }
+
+        .cell-top {
+            vertical-align: top;
+        }
+
+        .cell-middle {
+            vertical-align: middle;
+        }
+
+        .cell-bottom {
+            vertical-align: bottom;
+        }
+
+        .box {
+            width: 300px;
+            height: 300px;
+            border: black 1px solid;
+            margin-top: 50px;
+            text-align: center;
+            line-height: 300px;
+            border-radius: 50%;
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <caption>셀정렬</caption>
+        <tr>
+            <td class="cell-top">top</td>
+            <td class="cell-middle">middle</td>
+            <td class="cell-bottom">bottom</td>
+        </tr>
+    </table>
+
+    <div class="box">
+        <div class="inner-box"></div>
+        안녕하세요
+    </div>
+</body>
+</html>

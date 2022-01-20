@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keat</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        body{
+            background-color: royalblue;
+        }
+        div{
+            width: 100%;
+            height: 100px;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        #word{
+            background-color: red;                        
+        }
+        #hex{
+            background-color: #ff0000;                    
+        }
+        #rgb{
+            background-color: rgb(255,0,0);                    
+        }
+        #hsl{
+            background-color: hsl(0,100%,50%);                    
+        }
+        #rgba{
+            background-color: rgba(255, 0, 0, 0.5);                    
+            transition: 1s;
+        }
+
+        #rgba:hover{
+            background-color: #ff0000
+    
+        }
+        #hsla{
+            background-color: hsla(0, 100%, 50%, 0.5);                    
+        }
+
+    </style>
+</head>
+<body>
+    <div id="word">word:단어로 입력하는 형식</div>
+    <div id="hex">hex: #16진수 6자리로 입력</div>
+    <div id="rgb">rgb: (r,g,b) 0~255까지입력</div>
+    <div id="hsl">hsl: 거의 안씀..</div>
+    <div id="rgba">rgba : rgb에 알파(투명도) 추가</div>
+    <div id="hsla">hsla hsl에 알파(투명도)추가</div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+.red-color{
+    color: red;
+    size: 16px;
+    text-align: center;
+}
+
+.blue-color{
+    color: blue; 
+}
+
+/* 주석! */
+
+#main-slogan{
+    font-weight: 900;
+}
+
+span{
+    margin: 15px;
+}
+
+img{
+    display: block;
+}
