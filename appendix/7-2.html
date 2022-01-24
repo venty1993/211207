@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        img {
+            display: block;
+        }
+
+        #top {
+            width: 1000px;
+            height: 500px;
+        }
+
+        #top>div {
+            float: left;
+            height: 500px;
+        }
+
+        .top-left{
+            width: 750px;
+            background-image: url(img/0320-1.jpg);
+        }
+
+        .top-left-inner {
+            width: 250px;
+            height: 250px;
+            margin-top: 250px;
+            padding: 16px;
+        }
+
+        .space {
+            margin-top: 16px;
+        }
+        
+        .top-right {
+            width: 250px;
+        }
+
+        #box_all {
+            width: 1000px;
+            height: 500px;
+        }
+
+        #box_all>div{
+            height: 500px;
+            float: left;
+        }
+
+        .box-left {
+            width: 750px;
+        }
+
+        .box-left>ul>li{
+            width: 250px;
+            height: 250px;
+            float: left;
+            padding: 16px;
+        }
+
+        .box-left>ul>li:nth-child(2n+1){
+            background-color: red;
+        }
+        .box-left>ul>li:nth-child(2n) {
+            background-color: yellow;
+        }
+
+        .box-right {
+            width: 250px;
+            padding: 16px;
+            background-color: lightgreen;
+        }
+
+        footer {
+            width: 1000px;
+            height: 100px;
+        }
+
+        footer>nav {
+            float: left;
+        }
+
+        .footer-nav {
+            width: 750px;
+            height: 50px;
+            padding: 18px;
+            background-color: gray;
+        }
+
+        .footer-nav>li {
+            float: left;
+            height: 14px;
+            line-height: 14px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-right: 1px solid orange;
+            color: white;
+            font-size: 14px;
+        }
+
+        .footer-nav>li:last-child{
+            border: none;
+        }
+
+        .footer-right {
+            float: left;
+            width: 250px;
+            height: 50px;
+            background-color: black;
+        }
+
+        .footer-right>select{
+            width: 200px;
+            height: 30px;
+            margin: 10px 25px;
+            background-color: cadetblue;
+            border: none;
+            color: white;
+            padding-left: 15px;
+        }
+        
+    </style>
+</head>
+<body>
+    <section id="top">
+        <div class="top-left">
+            <div class="top-left-inner">
+                <h3>
+                    GLOBAL
+                    <br>
+                    BUSINESS
+                </h3>
+                <p class="space">
+                    GLOBAL No.1 lifestyle Media Shopping Leader<br>
+                    라이프스타일을 선도하는 세계최고의 미디어 쇼핑리더
+                </p>
+            </div>
+        </div>
+        <div class="top-right">
+            <div class="box1">
+                <img src="img/0320-2.jpg" alt="">
+            </div>
+            <div class="box2">
+                <img src="img/0320-3.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section id="box_all">
+        <div class="box-left">
+            <ul>
+                <li>
+                    <h3>CSV</h3>
+                    <p class="space">상생 이념을 통해 함께 성장하고 사회에 공헌하는 CSV프로그램과 활동소식을 안내합니다.</p>
+                </li>
+                <li>
+                    <h3>입점안내</h3>
+                    <p class="space">고객에게 늘 새롭고 Trendy한 제안을 하는 CJ O Shopping! 힘찬도약을 함께 할 동반자를 찾습니다.</p>
+                </li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+            </ul>
+        </div>
+        <div class="box-right">
+            <div>7</div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <ul class="footer-nav">
+                <li>법적고지</li>
+                <li>이메일무단수집거부</li>
+                <li>이용약관</li>
+                <li>개인정보취급방침</li>
+                <li>고객센터</li>
+                <li>입찰공고</li>
+            </ul>
+        </nav>
+        <div class="footer-right">
+            <select name="" id="">
+                <option value="">cj그룹계열사바로가기</option>
+            </select>
+        </div>
+    </footer>
+</body>
+</html>
