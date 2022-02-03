@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width:100%;
+            height: 500px;
+            background-color: gray;
+            display: flex;
+            
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            /* justify-content: flex-start, center, flex end로 정렬 가능; */
+            /* 필수 숙지! 
+            justify-content: 메인 축에 어떻게 정렬될거냐; 
+            align-items: 축에 수직방향으로 어떻게 정렬될거냐;
+            */
+            /* align-items: stretch;가 기본값이다 */
+
+            /* 기본값 flex-direction: row; */
+            
+        }
+        
+        .inner {
+            border: 2px solid black;
+            background-color: white;
+            width: 300px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="inner">1asfasfasf
+            <br>
+            asfasfsaf
+            <br>
+            asdbasdasdf
+
+        </div>
+        <div class="inner">2</div>
+        <div class="inner">3</div>
+        <div class="inner">4</div>
+    </div>
+</body>
+</html>

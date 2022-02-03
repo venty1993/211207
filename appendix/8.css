@@ -1,0 +1,134 @@
+:root{
+    --margin-nomal : 24px; 
+}
+
+body {
+    background-color: gray;
+}
+
+a {
+    color: gray;
+    text-decoration: none;
+}
+
+.wrapper {
+    width: 1600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+nav {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background-color: black;
+}
+
+h1 {
+    font-family: 'Russo One', sans-serif;
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    margin-top: 24px;   
+    margin-bottom: 32px;
+}
+
+nav ul {
+    margin-left: var(--margin-nomal);
+    
+}
+
+nav li {
+    margin-bottom: var(--margin-nomal);
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.oitem {
+    font-size: 12px;
+    color: lime;
+    margin-left: 6px;
+}
+
+.search {
+    margin : var(--margin-nomal)
+}
+
+.search>*{
+    border: 1px solid darkgray;
+    display: block;
+    height: 24px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.search input {
+    background-color: gray;
+    width: 92px;
+    color: white;
+}
+
+.search button {
+    text-align: center;
+    width: 60px;
+    background-color: black;
+    color: darkgray;
+    font-size: 8px;
+}
+
+.search input:focus{
+    background-color: darkgreen;
+    outline: none;
+}
+
+section {
+    width: 1400px;
+    margin-left: 200px;
+    background-color: salmon;
+}
+
+.banner {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.banner>img {
+    margin-top: var(--margin-nomal);
+}
+
+.play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 150px;
+    color: white;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+#photo {
+    width: 1072px;
+    margin: 0 auto;
+    margin-top: var(--margin-nomal);
+    height: 1100px;
+
+}
+
+#photo img {
+    display: block;
+    float: left;
+    margin-right: var(--margin-nomal);
+    margin-bottom: var(--margin-nomal);
+}
+
+#photo img:nth-child(4n) {
+    margin-right: 0;
+}
