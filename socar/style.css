@@ -2,6 +2,15 @@
     --main-color : #00b8ff;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: var(--main-color);
+}
+
 #top {
     background-image: url(image/main_visual_fullscreen.jpg);
     height: 100vh;
@@ -38,16 +47,18 @@ h1 > span {
 }
 
 .hamberger {
+    display: block;
     width: 40px;
     height: 40px;
     position: relative;
     cursor: pointer;
+    z-index: 3;
 }
 
 .hamberger::after, .hamberger::before {
     content: '';
     width: 25px;
-    height: 4px;
+    height: 3px;
     display: block;
     background-color: white;
     transition: 0.2s;
@@ -82,4 +93,66 @@ h1 > span {
 #top > h2 {
     text-align: center;
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 140%;
+    letter-spacing: -3px;
 }
+
+.slide-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 100vh;
+    background-color: #28323c;
+    padding: 24px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 2;
+    transform: translateX(100%);
+    transition: 0.5s;
+}
+
+#berger-click:checked ~ .slide-menu {
+    transform: translateX(0);
+}
+
+.slide-menu ul {
+    border-bottom: 1px solid gray;
+    margin: 0 16px;
+    padding-top: 24px;
+}
+
+.slide-menu ul:first-of-type {
+    padding: 0;
+}
+
+.slide-menu li {
+    margin-bottom: 24px;
+}
+
+.indent {
+    text-indent: 24px;
+}
+
+.focus-out {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.8;
+    z-index: 1;
+}
+#berger-click:checked ~ .focus-out {
+    display: block;
+}
+
